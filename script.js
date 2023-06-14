@@ -33,6 +33,12 @@ const convertValues = () => {
     }   
 }
 
+const placeholderDelete = () => {
+    if (inputValue.value === "") {
+        inputValue.placeholder = "0"
+    }
+}
+
 const changeValues = () => {
     if (inputValue.value >= 0) {
         realValue.textContent = 'R$ 10.000,00'
@@ -55,6 +61,7 @@ const changeValues = () => {
 }
 
 button.addEventListener('click', convertValues)
+button.addEventListener('click', placeholderDelete)
 selectCoin.addEventListener('change', changeValues)
 
 
