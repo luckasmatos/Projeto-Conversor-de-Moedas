@@ -6,12 +6,12 @@ Confira o resultado do projeto <a href="https://luckasmatos-currencyconverter.ne
 <br>
 <h3 align="center">Aplicação em Desktop:</h2>
 <p align="center">
-<img src="" width=100%">
+<img src="https://github.com/luckasmatos/Projeto-Conversor-de-Moedas/blob/2dc4fa11805f62ffb351ef9ab6a1fb119428ce06/Conversor%20Desktop.png" width=100%">
 </p>
 <br>
 
 <h3 align="center">Aplicação em Mobile:</h2>                                                                                                <p align="center">
-<img src="" height=100%">
+<img src="https://github.com/luckasmatos/Projeto-Conversor-de-Moedas/blob/2dc4fa11805f62ffb351ef9ab6a1fb119428ce06/Conversor%20Smartphone.png" height=100%">
 </p>
 
 
