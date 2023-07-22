@@ -10,64 +10,62 @@
 </head>
 
 <body>
-    <div class="mask">
-        <div class="container">
-            <header>
-                <h1 id="title-text">Conversor de Moedas</h1>
-            </header>
-            <main>
-                <div class="inputs">
-                    <div class="input-box">
-                        <label class="input-label">Converter <b>de</b></label>
-                        <div class="select-box">
-                            <select class="select-input">
-                                <option>Real Brasileiro</option>
-                            </select>
-                            <label class="simbol-coin">R$</label>
-                        </div>
-                    </div>
-
-                    <div class="input-box">
-                        <label class="input-label">Converter <b>para</b></label>
-                        <div class="select-box">
-                            <select class="select-input" id="currency-coin">
-                                <option>Dólar Americano</option>
-                                <option>Euro</option>
-                                <option>Bitcoin</option>
-                            </select>
-                            <label class="simbol-coin" id="currency-simbol">US$</label>
-                        </div>
-                    </div>
-
-                    <div class="input-box">
-                        <label class="input-label">Valor</label>
-                        <div class="select-box">
-                            <input class="select-input" type="number" placeholder="10.000,00" id="input-value">
-                            <label class="simbol-coin">R$</label>
-                        </div>
-                    </div>
-
-                    <button id="convert-button">Converter</button>
-
-                </div>
-
-
-
-                <div class="output">
-                    <div class="output-style">
-                        <img src="./Assets/Brasil.png" alt="flag">
-                        <p>Real</p>
-                        <h2 id="real-value">R$ 10.000,00</h2>
-                    </div>
-                    <img src="./Assets/Seta.png" class="arrow" alt="Arrow">
-                    <div class="output-style">
-                        <img src="./Assets/EUA.png" alt="flag" id="flag">
-                        <p id="labelCurrencyCoin">Dólar Americano</p>
-                        <h2 id="currency-value">US$ 2.000,00</h2>
+    <div class="container">
+        <header>
+            <h1 id="title-text">Conversor de Moedas</h1>
+        </header>
+        <main>
+            <div class="inputs">
+                <div class="input-box">
+                    <label class="input-label">Converter <b>de</b></label>
+                    <div class="select-box">
+                        <select class="select-input">
+                            <option>Real Brasileiro</option>
+                        </select>
+                        <label class="simbol-coin">R$</label>
                     </div>
                 </div>
-            </main>
-        </div>
+
+                <div class="input-box">
+                    <label class="input-label">Converter <b>para</b></label>
+                    <div class="select-box">
+                        <select class="select-input" id="currency-coin">
+                            <option>Dólar Americano</option>
+                            <option>Euro</option>
+                            <option>Bitcoin</option>
+                        </select>
+                        <label class="simbol-coin" id="currency-simbol">US$</label>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label class="input-label">Valor</label>
+                    <div class="select-box">
+                        <input class="select-input" type="number" placeholder="10.000,00" id="input-value">
+                        <label class="simbol-coin">R$</label>
+                    </div>
+                </div>
+
+                <button id="convert-button">Converter</button>
+
+            </div>
+
+
+
+            <div class="output">
+                <div class="output-style">
+                    <img src="./Assets/Brasil.png" alt="flag">
+                    <p>Real</p>
+                    <h2 id="real-value">R$ 10.000,00</h2>
+                </div>
+                <img src="./Assets/Seta.png" class="arrow" alt="Arrow">
+                <div class="output-style">
+                    <img src="./Assets/EUA.png" alt="flag" id="flag">
+                    <p id="labelCurrencyCoin">Dólar Americano</p>
+                    <h2 id="currency-value">US$ 2.000,00</h2>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 <script src="./script.js"></script>

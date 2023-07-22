@@ -10,26 +10,12 @@
 body {
     width: 100%;
     height: 100vh;
-    background-image: url(./Assets/wallpaper.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.mask {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(rgba(3,11,69,1) 10%, rgba(13,67,126,1) 50%, rgba(80,2,153,1) 90%);
 }
 
 .container {
@@ -37,11 +23,18 @@ body {
     height: 90vh;
     border: none;
     border-radius: 2vh;
-    background-color: rgba(0,0,0,0.7);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 60px 36px rgba(0,0,0,0.2);
+    transition: 1s;
+}
+
+.container:hover {
+    box-shadow: 0px 0px 70px 36px rgba(0,0,0,0.4);
+    transition: 1s;
 }
 
 header {
@@ -51,7 +44,7 @@ header {
     align-items: center;
     justify-content: center;
     border-radius: 2vh 2vh 0 0;
-    background-color: rgba(87, 87, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #title-text {
@@ -92,7 +85,7 @@ main {
     font-weight: 400;
     font-size: 2.2vh;
     line-height: 2.2vh;
-    color: #c5c5c5;
+    color: rgba(255, 255, 255, 0.8)
 }
 
 .select-input {
@@ -104,11 +97,21 @@ main {
     font-size: 2.2vh;
     padding-left: 15%;
     cursor: pointer;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8)
 }
 
 .select-input:hover {
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.select-input::placeholder {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.select-input option {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -122,6 +125,7 @@ input[type=number]::-webkit-outer-spin-button {
     left: 5%;
     transform: translateY(-50%);
     font-size: 2.2vh;
+    color: rgba(255, 255, 255, 0.8)
 }
 
 #convert-button {
@@ -130,24 +134,29 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
     border-radius: 3vh;
     font-size: 2.2vh;
-    background-color: rgba(87, 87, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #F4F4F4;
     cursor: pointer;
 }
 
 #convert-button:hover {
-    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#convert-button:active {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .output {
     width: 100%;
     height: 32vh;
-    border: 1px solid rgba(87, 87, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.6);
     border-radius: 1vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .output-style {
@@ -182,9 +191,13 @@ h2 {
 
 @media screen and (max-width: 450px){
     
+    html, body {
+        height: 100%;
+    }
+
     .container {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         border-radius: 0;
     }
 

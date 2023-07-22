@@ -40,8 +40,9 @@ const placeholderDelete = () => {
 }
 
 const changeValues = () => {
-    if (inputValue.value >= 0) {
+    if (inputValue.value === "") {
         realValue.textContent = 'R$ 10.000,00'
+        inputValue.placeholder = '10.000,00'
         if (selectCoin.value === 'Dólar Americano') {
             currencyValue.textContent = new Intl.NumberFormat('pt-BT', { style: 'currency', currency: 'USD' }).format(10000 / bitcoin)
             labelCurrencyCoin.textContent = 'Dólar Americano'
@@ -57,6 +58,9 @@ const changeValues = () => {
             labelCurrencyCoin.textContent = 'Bitcoin'
             flag.src = './Assets/Bitcoin.png'
         }
+    }
+    else {
+        convertValues()
     }
 }
 
